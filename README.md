@@ -7,7 +7,7 @@
 ## Table of Contents
  
 [Arrow Detection](https://git.scc.kit.edu/yn2099/research-model-annotation#arrow-detection)  
-[COCO Annotator Data Export](#emphasis)  
+[COCO Annotator Data Export](https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/README.md#coco-annotator-export)
 <a name="arrows"/>
 ## Arrow Detection
 The [arrow detection script](https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/Arrow%20Detection.ipynb) shows one possible way on how to extract also information about the relationships between the constructs.
