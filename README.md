@@ -30,11 +30,14 @@ Some arrows are detected as multiple lines with a very similar slope. By compari
 
 
 
-![Arrow Detection Step 3](images/arrow_detection_step3.PNG)
+![Arrow Detection Step 3](images/arrow_detection_step3.PNG | width=100)
 
 
 ## COCO Annotator Export
-COCO Annotator allows users to export data in various ways. The simplest way is to just use the export button within the graphical interface. 
+COCO Annotator allows users to export the annotation data in various ways. 
+### 1. Export
+
+The simplest way is to just use the export button within the graphical interface. 
 
 ![COCO Export - 1- 1](images/coco_export_1_1.PNG)
 
@@ -47,5 +50,18 @@ The output of this export looks like this:
 ![COCO Export - 1 - Output](images/coco_export_1_output.PNG)
 
 It includes information about the images, the categories and the annoations.
+
+### 2. Export
+
+It is also possible to go to COCO's built-in API view, accessible through [ Base URL: /api ], in our case [http://129.13.111.115:5000/api/](http://129.13.111.115:5000/api/).
+
+Since we're mostly interested in the annotations data for our analysis, we focus here on the /annotation/ API.
+
+![COCO Export - 1 - Output](images/coco_export_2.PNG)
+
+This give us the following output.
+
+![COCO Export - 1 - Output](images/coco_export_2_output.PNG)
+
 
 
