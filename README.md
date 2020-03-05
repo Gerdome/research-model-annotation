@@ -30,7 +30,7 @@ Some arrows are detected as multiple lines with a very similar slope. By compari
 
 
 
-![Arrow Detection Step 3](images/arrow_detection_step3.PNG | width=100)
+![Arrow Detection Step 3](images/arrow_detection_step3.PNG)
 
 
 ## COCO Annotator Export
