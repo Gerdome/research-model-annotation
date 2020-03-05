@@ -2,6 +2,7 @@ import pandas as pd
 import json
 import csv
 
+#Transform from json to csv
 
 #load image json from coco to identify image id
 json_file = open('images_mapping.json')
