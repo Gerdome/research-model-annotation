@@ -7,7 +7,7 @@
 ## Table of Contents
  
 [Arrow Detection](https://git.scc.kit.edu/yn2099/research-model-annotation#arrow-detection)  
-[COCO Annotator Data Export](https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/README.md#coco-annotator-export)
+[COCO Annotator Data Export](#emphasis)  
 <a name="arrows"/>
 ## Arrow Detection
 The [arrow detection script](https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/Arrow%20Detection.ipynb) shows one possible way on how to extract also information about the relationships between the constructs.
@@ -30,7 +30,7 @@ Some arrows are detected as multiple lines with a very similar slope. By compari
 
 
 
-![Arrow Detection Step 3](images/arrow_detection_step3.PNG)
+![Arrow Detection Step 3](images/arrow_detection_step3.PNG | width=100)
 
 
 ## COCO Annotator Export
@@ -45,7 +45,7 @@ You can select which categories of the annotations you want to export. In our ca
 
 ![COCO Export - 1 -2](images/coco_export_1_2.PNG)
 
-The output of this export looks like this:
+The output is a JSON file with the following structure:
 
 ![COCO Export - 1 - Output](images/coco_export_1_output.PNG)
 
@@ -59,9 +59,10 @@ Since we're mostly interested in the annotations data for our analysis, we focus
 
 ![COCO Export - 1 - Output](images/coco_export_2.PNG)
 
-This give us the following output.
+The output is a JSON file with the following structure.
 
 ![COCO Export - 1 - Output](images/coco_export_2_output.PNG)
 
+Please note, that this JSON gives more information about the individual annotations. While the first export only shows annotations that are currently in the dataset, this output also shows annotations that have been deleted already. This way, we can analyse the performance of the construct detection algorithm by comparing the data before and after the manual labelling process. See the analysis script for the results.
 
 
