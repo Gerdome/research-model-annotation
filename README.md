@@ -30,7 +30,7 @@ Some arrows are detected as multiple lines with a very similar slope. By compari
 
 
 
-![Arrow Detection Step 3](images/arrow_detection_step3.PNG | width=100)
+![Arrow Detection Step 3](images/arrow_detection_step3.PNG)
 
 
 ## COCO Annotator Export
@@ -64,5 +64,4 @@ The output is a JSON file with the following structure.
 ![COCO Export - 1 - Output](images/coco_export_2_output.PNG)
 
 Please note, that this JSON gives more information about the individual annotations. While the first export only shows annotations that are currently in the dataset, this output also shows annotations that have been deleted already. This way, we can analyse the performance of the construct detection algorithm by comparing the data before and after the manual labelling process. See the analysis script for the results.
-
 
