@@ -4,8 +4,8 @@ from wordcloud import WordCloud, STOPWORDS
 import numpy as npy
 from PIL import Image
 
-#load final dataset
-json_file = open('final_data.json')
+#load final data set
+json_file = open('data_tesseract.json')
 json_str = json_file.read()
 data = json.loads(json_str)
 
