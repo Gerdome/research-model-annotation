@@ -18,5 +18,5 @@ The idea  behind it is as follows:
 In order to identify lines in an image, one can use cv2's [HoughLines function](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html). However, without further pre-processing this function would detect all lines that occur within the SEMs, also the lines that represent the edges of the constructs. That's why we first need to delete the detected constructs.
 
 
+![Arrow Detection Step 1](images/arrow_detection_step1.PNG)
 
-<img src="https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/images/arrow_detection_step1.PNG">
