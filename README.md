@@ -1,3 +1,4 @@
+
 # Algorithmic construct identification in Structural Equation Models (SEM)
 
 
@@ -5,10 +6,9 @@
 
 ## Table of Contents
  
-[Headers](#headers)  
-[Emphasis](#emphasis)  
-...snip...    
-<a name="headers"/>
+[Arrow Detection](https://git.scc.kit.edu/yn2099/research-model-annotation#arrow-detection)  
+[COCO Annotator Data Export](#emphasis)  
+<a name="arrows"/>
 ## Arrow Detection
 The [arrow detection script](https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/Arrow%20Detection.ipynb) shows one possible way on how to extract also information about the relationships between the constructs.
 
@@ -31,3 +31,21 @@ Some arrows are detected as multiple lines with a very similar slope. By compari
 
 
 ![Arrow Detection Step 3](images/arrow_detection_step3.PNG)
+
+
+## COCO Annotator Export
+COCO Annotator allows users to export data in various ways. The simplest way is to just use the export button within the graphical interface. 
+
+![COCO Export - 1- 1](images/coco_export_1_1.PNG)
+
+You can select which categories of the annotations you want to export. In our case, we only use one category, the constructs. The system generates a json file which can be downloaded within the Export Tab.
+
+![COCO Export - 1 -2](images/coco_export_1_2.PNG)
+
+The output of this export looks like this:
+
+![COCO Export - 1 - Output](images/coco_export_1_output.PNG)
+
+It includes information about the images, the categories and the annoations.
+
+
