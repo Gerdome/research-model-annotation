@@ -20,3 +20,14 @@ In order to identify lines in an image, one can use cv2's [HoughLines function](
 
 ![Arrow Detection Step 1](images/arrow_detection_step1.PNG)
 
+Now we can run HoughLines to idenify the arrows. (left part)
+As a next step, we add the shapes back into the image (right part). Now we know, which lines actually represent arrows and which lines are just the edges of the constructs.
+
+
+![Arrow Detection Step 2](images/arrow_detection_step2.PNG)
+
+Some arrows are detected as multiple lines with a very similar slope. By comparing the slope of all lines and keeping only one per slope, we can clean up the data. Once that is done, we can identify with how many arrows each detected construct intersects.
+
+
+
+![Arrow Detection Step 3](images/arrow_detection_step3.PNG)
