@@ -1,4 +1,3 @@
-
 # Algorithmic construct identification in Structural Equation Models (SEM)
 
 
@@ -20,4 +19,4 @@ In order to identify lines in an image, one can use cv2's [HoughLines function](
 
 
 
-<img src="https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/images/arrow_detection_step1.PNG" width="400">
+<img src="https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/images/arrow_detection_step1.PNG">
