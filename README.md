@@ -56,7 +56,7 @@ Some arrows are detected as multiple lines with a very similar slope. By compari
 ![Arrow Detection Step 3](images/arrow_detection_step3.PNG)
 
 ### API Calls
-After the run of the script all detected annoations of the constructs are shown in the COCO annotator dataset.
+After executing the script all detected annoations of the constructs are shown in the COCO annotator dataset.
 
 ![API Calls - Output](images/api_calls.PNG)
 
