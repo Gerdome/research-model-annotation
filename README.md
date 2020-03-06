@@ -5,10 +5,28 @@
 
 
 ## Table of Contents
+
  
 [Arrow Detection](https://git.scc.kit.edu/yn2099/research-model-annotation#arrow-detection)  
 [COCO Annotator Data Export](#emphasis)  
 <a name="arrows"/>
+
+
+## Data Explanation
+The following figure shows the different steps taken towards our final dataset. 
+
+| Scripts / Dataset| Explanation|
+| --- | --- |
+| Arrow Detection Notebook | First try to detect the arrows of the SEMs and also the relations between different constructs. More explained in chapter *Arrow Detection*. |
+| detect_constructs.py| Script for detecting constructs within SEMs and drawing them into the image |
+
+## Detect Constructs
+The script runs through all images, detects constructs using cv2's findContours(), and draws them into the images. See below three example outputs.
+
+![Construct Detection Output](images/detect_constructs_output.PNG)
+
+The outputs show where the algorithm works well (left), where it identifies shapes as constructs that are not constructs (middle), and where it misses out to detect constructs (right).
+
 ## Arrow Detection
 The [arrow detection script](https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/Arrow%20Detection.ipynb) shows one possible way on how to extract also information about the relationships between the constructs.
 
@@ -64,4 +82,5 @@ The output is a JSON file with the following structure.
 ![COCO Export - 1 - Output](images/coco_export_2_output.PNG)
 
 Please note, that this JSON gives more information about the individual annotations. While the first export only shows annotations that are currently in the dataset, this output also shows annotations that have been deleted already. This way, we can analyse the performance of the construct detection algorithm by comparing the data before and after the manual labelling process. See the analysis script for the results.
+
 
