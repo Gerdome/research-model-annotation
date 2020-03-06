@@ -30,7 +30,7 @@ The script runs through all images, detects constructs using cv2's findContours(
 
 ![Construct Detection Output](images/detect_constructs_output.PNG)
 
-The outputs show where the algorithm works well (left), where it identifies shapes as constructs that are not constructs (middle), and where it misses out to detect constructs (right).
+The outputs show where the algorithm works well (left), where it identifies shapes as constructs that are not constructs (middle), and where it fails to detect constructs (right).
 
 ###  Arrow Detection
 The [arrow detection script](https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/Arrow%20Detection.ipynb) shows one possible way on how to extract also information about the relationships between the constructs.
