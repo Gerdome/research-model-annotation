@@ -13,7 +13,7 @@ The following table shows the different scripts and the different output files t
 | coco_export.json & annotations_api.json|After annotations are done -> JSON files are exported from the COCO Annotator. Different export possibilities are available. See [COCO Annotator Data Export](https://git.scc.kit.edu/yn2099/research-model-annotation#coco-annotator-export). |
 | annotations_api_to_csv.py & images_mapping_to_csv.py|Simple helper scripts to transform JSON files to csv files.|
 | data_analysis.py|Script for analysing performance of shape detection algorithm and getting insights after labelling.
-| detect_construct_names.py|Script for going through final annotated dataset and detecting the names of the constructs in the respective areas using tesseract. Final output is JSON file that includes information about every annotated construct + the name of the construct that the algorithm detected. Output name: data_tesseract.json|
+| detect_construct_names.py |Script for going through final annotated dataset and detecting the names of the constructs in the respective areas using tesseract. Final output is JSON file that includes information about every annotated construct + the name of the construct that the algorithm detected. Output name: data_tesseract.json|
 | create_wordcloud.py| Using data_tesseract.json to create wordcloud of detected construct names.|
 
 ###  Detect Constructs
@@ -84,9 +84,13 @@ The output is a JSON file with the following structure.
 Please note, that this JSON gives more information about the individual annotations. While the first export only shows annotations that are currently in the dataset, this output also shows annotations that have been deleted already. This way, we can analyse the performance of the construct detection algorithm by comparing the data before and after the manual labelling process. See the analysis script for the results.
 
 ### Detect Construct Names (Tesseract)
-The output of the [detect_constructs_names](https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/detect_construct_names.py) script returns a final json with the following format.
+The output of the [detect_constructs_names](https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/detect_construct_names.py) script returns a [final json](https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/data_tesseract.json) with the following format.
 
 ![Tesseract Output](images/tesseract_output.PNG)
+
+Every entry in the json represents a model and contains information about the name, the id, and its constructs. Each construct has information about the bounding box, as well as the detected name in it.
+
+
 
 
 
