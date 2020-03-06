@@ -1,5 +1,4 @@
-
-# Algorithmic construct identification in Structural Equation Models (SEM)
+# Algorithmic construct identification in Structural Equation Models (SEMs)
 
 
 
