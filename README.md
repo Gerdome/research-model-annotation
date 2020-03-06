@@ -19,7 +19,7 @@ The following table shows the different scripts and the different output files t
 | Arrow Detection Notebook | First try to detect the arrows of the SEMs and also the relations between different constructs. Further explained in chapter *Arrow Detection*. |
 | detect_constructs.py| Script for detecting constructs within SEMs and drawing them into the image. |
 | api_calls.py| Script that detects constructs (same method as above) and pushes detected annotations to COCO Annotator using API calls. |
-| coco_export.json & annotations_api.json|After annotations are done -> JSON files that are exported from the COCO Annotator. Different export possibilities are available. See [COCO Annotator Data Export](https://git.scc.kit.edu/yn2099/research-model-annotation#coco-annotator-export). |
+| coco_export.json & annotations_api.json|After annotations are done -> JSON files are exported from the COCO Annotator. Different export possibilities are available. See [COCO Annotator Data Export](https://git.scc.kit.edu/yn2099/research-model-annotation#coco-annotator-export). |
 | annotations_api_to_csv.py & images_mapping_to_csv.py|Simple helper scripts to transform JSON files to csv files.|
 | data_analysis.py|Script for analysing performance of shape detection algorithm and getting insights after labelling.
 | detect_construct_names.py|Script for going through final annotated dataset and detecting the names of the constructs in the respective areas using tesseract. Final output is JSON file that includes information about every annotated construct + the name of the construct that the algorithm detected. Output name: data_tesseract.json|
