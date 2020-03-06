@@ -43,7 +43,7 @@ In order to identify lines in an image, one can use cv2's [HoughLines function](
 
 ![Arrow Detection Step 1](images/arrow_detection_step1.PNG)
 
-Now we can run HoughLines to idenify the arrows. (left part)
+Now we can run HoughLines to idenify the arrows (left part).
 As a next step, we add the shapes back into the image (right part). Now we know, which lines actually represent arrows and which lines are just the edges of the constructs.
 
 
