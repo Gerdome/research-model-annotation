@@ -16,7 +16,7 @@ The following table shows the different scripts and the different output files t
 
 | Scripts / Dataset| Explanation|
 | --- | --- |
-| Arrow Detection Notebook | First try to detect the arrows of the SEMs and also the relations between different constructs. More explained in chapter *Arrow Detection*. |
+| Arrow Detection Notebook | First try to detect the arrows of the SEMs and also the relations between different constructs. Further explained in chapter *Arrow Detection*. |
 | detect_constructs.py| Script for detecting constructs within SEMs and drawing them into the image |
 | api_calls.py| Script that detects constructs (same method as above) and pushes detected annotations to COCO Annotator using API calls. |
 | coco_export.json & annotations_api.json|After annotations is done -> JSON files that are exported from the COCO Annotator. Different export possibilities are available. See [COCO Annotator Data Export](https://git.scc.kit.edu/yn2099/research-model-annotation#coco-annotator-export). |
