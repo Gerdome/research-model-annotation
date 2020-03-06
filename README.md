@@ -1,14 +1,5 @@
+
 # Algorithmic construct identification in Structural Equation Models (SEMs)
-
-
-
-
-## Table of Contents
-
- 
-[Arrow Detection](https://git.scc.kit.edu/yn2099/research-model-annotation#arrow-detection)  
-[COCO Annotator Data Export](https://git.scc.kit.edu/yn2099/research-model-annotation#coco-annotator-export)  
-<a name="arrows"/>
 
 
 ## Data and Scripts Explanation
@@ -60,9 +51,9 @@ After executing the script all detected annoations of the constructs are shown i
 
 ![API Calls - Output](images/api_calls.PNG)
 
-## COCO Annotator Export
+### COCO Annotator Export
 COCO Annotator allows users to export the annotation data in various ways. 
-### 1. Export
+#### 1. Export
 
 The simplest way is to just use the export button within the graphical interface. 
 
@@ -78,7 +69,7 @@ The output is a JSON file with the following structure:
 
 It includes information about the images, the categories and the annoations.
 
-### 2. Export
+#### 2. Export
 
 It is also possible to go to COCO's built-in API view, accessible through [ Base URL: /api ], in our case [http://129.13.111.115:5000/api/](http://129.13.111.115:5000/api/).
 
@@ -91,5 +82,11 @@ The output is a JSON file with the following structure.
 ![COCO Export - 1 - Output](images/coco_export_2_output.PNG)
 
 Please note, that this JSON gives more information about the individual annotations. While the first export only shows annotations that are currently in the dataset, this output also shows annotations that have been deleted already. This way, we can analyse the performance of the construct detection algorithm by comparing the data before and after the manual labelling process. See the analysis script for the results.
+
+### Detect Construct Names (Tesseract)
+The output of the [detect_constructs_names](https://git.scc.kit.edu/yn2099/research-model-annotation/-/blob/master/detect_construct_names.py) script returns a final json with the following format.
+
+![Tesseract Output](images/tesseract_output.PNG)
+
 
 
