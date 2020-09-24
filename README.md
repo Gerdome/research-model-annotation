@@ -1,5 +1,6 @@
 
-# Algorithmic construct identification in Structural Equation Models (SEMs)
+# Shape detection of Structural Equation Models: A scalable approach using computer vision algorithms 
+
 Please find the corresponding paper [here](https://github.com/Gerdome/research-model-annotation/blob/master/Seminararbeit_GerritMerz.pdf)
 
 ## Data and Scripts Explanation
