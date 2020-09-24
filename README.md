@@ -1,6 +1,6 @@
 
 # Algorithmic construct identification in Structural Equation Models (SEMs)
-
+Please find the corresponding paper [here](https://github.com/Gerdome/research-model-annotation/blob/master/Seminararbeit_GerritMerz.pdf)
 
 ## Data and Scripts Explanation
 The following table shows the different scripts and the different output files together with a brief description. Below the table, you will find some graphical output for each of the scripts for further explanation.
